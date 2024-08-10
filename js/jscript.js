@@ -5,6 +5,7 @@ import {task4} from "./task_4.js";
 import {task5} from "./task_5.js";
 import {task6} from "./task_6.js";
 import {task7} from "./task_7.js";
+import {task8} from "./task_8.js"
 
 //task1();
 //task2();
@@ -12,4 +13,5 @@ import {task7} from "./task_7.js";
 //task4();
 //task5();
 //task6();
-task7()
+//task7()
+task8();
