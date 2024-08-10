@@ -1,6 +1,9 @@
 export function task10() {
     let userNumber;
     do {
+        if (typeof (userNumber) !== 'number'){
+            alert("Error you should use only numbers")
+        }
         userNumber = parseInt(prompt("What is your number?"));
     } while (userNumber <= 0)
     const dividers = (number) => {
