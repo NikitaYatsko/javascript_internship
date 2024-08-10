@@ -10,3 +10,4 @@ export function task6() {
         alert("Error")
     }
 }
+
