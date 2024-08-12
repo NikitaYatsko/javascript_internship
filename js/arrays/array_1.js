@@ -36,7 +36,6 @@ export function array1() {
 
     array.reduce((accumulator, currentValue) => {
         console.log(currentValue);
-
     }, []);
     //
 
