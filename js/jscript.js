@@ -3,7 +3,9 @@ import {array1} from "./arrays/array_1.js";
 import {array2} from "./arrays/array_2.js";
 //array2();
 import {array3} from "./arrays/array_3.js";
-array3();
+//array3();
+import {array4} from  "./arrays/array_4.js"
+array4();
 
 
 import {task1} from "./task_1.js";
