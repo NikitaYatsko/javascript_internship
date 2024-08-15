@@ -3,10 +3,10 @@ export function array3() {
     console.log(styles);
     styles.push("Рок-н-ролл");
     console.log(styles);
-    styles.splice(1, 1, "Классика");
+    let changed = Math.floor(styles.length / 2)
+    styles.splice(changed, 1, "Классика")
     console.log(styles);
     console.log(styles.shift());
-    console.log(styles);
-    styles.splice(0, 0, "Реп", "Регги");
+    styles.unshift("Реп", "Регги")
     console.log(styles);
 }
