@@ -3,9 +3,15 @@ import {array1} from "./arrays/array_1.js";
 import {array2} from "./arrays/array_2.js";
 //array2();
 import {array3} from "./arrays/array_3.js";
-array3();
-import {array4} from  "./arrays/array_4.js"
+//array3();
+import {array4} from "./arrays/array_4.js"
 //array4();
+import {array5} from "./arrays/array_5.js";
+//array5();
+import {array6} from "./arrays/array_6.js";
+//array6();
+import {array7} from "./arrays/array_7.js";
+array7();
 
 
 import {task1} from "./task_1.js";
