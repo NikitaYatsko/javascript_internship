@@ -15,7 +15,9 @@ import {array7} from "./arrays/array_7.js";
 import {array8} from "./arrays/array_8.js";
 //array8();
 import {array9} from "./arrays/array_9.js";
-array9();
+//array9();
+import {array10} from "./arrays/array_10.js";
+array10();
 
 
 import {task1} from "./task_1.js";
