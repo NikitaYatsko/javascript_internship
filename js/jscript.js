@@ -1,3 +1,16 @@
+//OBJECTS
+import {object1} from "./objects/object_task_1.js";
+//object1();
+import {object2} from "./objects/object_task_2.js";
+object2();
+
+
+
+
+
+
+//ARRAYS
+
 import {array1} from "./arrays/array_1.js";
 //array1();
 import {array2} from "./arrays/array_2.js";
@@ -19,9 +32,9 @@ import {array9} from "./arrays/array_9.js";
 import {array10} from "./arrays/array_10.js";
 //array10();
 import {array11} from "./arrays/array_11.js";
-array11();
+//array11();
 
-
+//FUNDAMENTALS
 import {task1} from "./fundamentals/task_1.js";
 import {task2} from "./fundamentals/task_2.js";
 import {task3} from "./fundamentals/task_3.js";
