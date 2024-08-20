@@ -22,16 +22,16 @@ import {array11} from "./arrays/array_11.js";
 array11();
 
 
-import {task1} from "./task_1.js";
-import {task2} from "./task_2.js";
-import {task3} from "./task_3.js";
-import {task4} from "./task_4.js";
-import {task5} from "./task_5.js";
-import {task6} from "./task_6.js";
-import {task7} from "./task_7.js";
-import {task8} from "./task_8.js";
-import {task9} from "./task_9.js";
-import {task10} from "./task_10.js";
+import {task1} from "./fundamentals/task_1.js";
+import {task2} from "./fundamentals/task_2.js";
+import {task3} from "./fundamentals/task_3.js";
+import {task4} from "./fundamentals/task_4.js";
+import {task5} from "./fundamentals/task_5.js";
+import {task6} from "./fundamentals/task_6.js";
+import {task7} from "./fundamentals/task_7.js";
+import {task8} from "./fundamentals/task_8.js";
+import {task9} from "./fundamentals/task_9.js";
+import {task10} from "./fundamentals/task_10.js";
 
 //task1();
 //task2();
