@@ -2,7 +2,9 @@
 import {object1} from "./objects/object_task_1.js";
 //object1();
 import {object2} from "./objects/object_task_2.js";
-object2();
+//object2();
+import {object3} from "./objects/object_task_3.js";
+object3();
 
 
 
