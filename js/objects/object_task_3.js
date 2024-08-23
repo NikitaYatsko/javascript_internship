@@ -5,7 +5,6 @@ export function object3() {
         title: "My menu"
     };
 
-    console.log(menu)
 
     function multiplyNumeric(obj) {
         for (let key in obj) {
