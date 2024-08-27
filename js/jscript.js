@@ -14,8 +14,9 @@ import {object6} from "./objects/object_task_6.js";
 import {object7} from "./objects/object_task_7.js";
 //object7();
 import {object8} from "./objects/object_task_8.js";
-object8();
-
+//object8();
+import {object9} from "./objects/object_task_9.js";
+object9();
 
 //ARRAYS
 

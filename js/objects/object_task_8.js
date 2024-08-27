@@ -21,7 +21,7 @@ export function object8() {
     console.log(translateToRo(weekDays, translatedWeekDays))
 
     function translateToRo(objectToTranslate, translationObject) {
-        if (Object.keys(objectToTranslate.length === 0)){
+        if (Object.keys(objectToTranslate).length === 0){
             console.log(`Object is empty`)
         }
         const newObject = {}
