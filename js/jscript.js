@@ -16,7 +16,11 @@ import {object7} from "./objects/object_task_7.js";
 import {object8} from "./objects/object_task_8.js";
 //object8();
 import {object9} from "./objects/object_task_9.js";
-object9();
+//object9();
+//import {object10} from "./objects/object_task_10.js";
+//object10();
+import {object11} from "./objects/object_task_11.js";
+object11();
 
 //ARRAYS
 
