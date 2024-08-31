@@ -1,5 +1,5 @@
 export function object11() {
-    let option =parseInt(prompt("What option you choose?:\n" +
+    let option = parseInt(prompt("What option you choose?:\n" +
         "1.Show average grade for each student\n" +
         "2."));
     const arrayOfStudents = [
@@ -10,7 +10,7 @@ export function object11() {
         {name: "Saniok", marks: [8, 10, 9, 5, 8]}
     ];
 
-    switch (option){
+    switch (option) {
         case 1:
             averageGrade(arrayOfStudents);
             break;
@@ -24,9 +24,10 @@ export function object11() {
             const average = obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length;
             arrayOfAverageGrade.push({name: obj.name, average: average});
         });
-        alert(JSON.stringify(arrayOfAverageGrade,null,2));
+        alert(JSON.stringify(arrayOfAverageGrade, null, 1));
     }
-    function lessThanFiveAverage(array){
+
+    function lessThanFiveAverage(array) {
 
     }
 }
