@@ -56,8 +56,8 @@ export function object11() {
         //здесь решил воспользоваться ИИ тк застопорился и долго не понимал как сообразить решение(
 
         alert(`Average grades for each student:, ${JSON.stringify(arrayOfAverages)}\n
-        Student with max average:, ${JSON.stringify(maxAverageStudent.name)}, with average:, ${JSON.stringify(maxAverageStudent.average)}\n
-        Student with min average:, ${JSON.stringify(minAverageStudent.name)}, with average:, ${JSON.stringify(minAverageStudent.average)}`);
+        Student with max average:, ${maxAverageStudent.name}, with average:, ${maxAverageStudent.average}\n
+        Student with min average:, ${minAverageStudent.name}, with average:, ${minAverageStudent.average}`);
 
 
     }
