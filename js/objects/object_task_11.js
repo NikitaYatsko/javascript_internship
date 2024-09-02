@@ -31,7 +31,7 @@ export function object11() {
             average: obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length
         }))
 
-        console.log(JSON.stringify(arrayOfAverageGrade, null, 2));
+        alert(`Average grade for each student: \n${JSON.stringify(arrayOfAverageGrade)}`)
     }
 
     function lessThanFiveAverage(array) {
@@ -41,12 +41,26 @@ export function object11() {
         }))
             .filter(student => student.average < 5)
 
-        console.log(JSON.stringify(arrayLessThanFive, null, 2));
+        alert(`Lowest average grade: \n${JSON.stringify(arrayLessThanFive)}`);
     }
 
     function minMaxAverage(array) {
 
+        const arrayOfAverages = array.map(obj => ({
+            name: obj.name,
+            average: obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length
+        }));
+        //
+        const maxAverageStudent = arrayOfAverages.reduce((max, student) => student.average > max.average ? student : max, arrayOfAverages[0]);
+        const minAverageStudent = arrayOfAverages.reduce((min, student) => student.average < min.average ? student : min, arrayOfAverages[0]);
+        //здесь решил воспользоваться ИИ тк застопорился и долго не понимал как сообразить решение(
+
+        alert(`Average grades for each student:, ${JSON.stringify(arrayOfAverages)}\n
+        Student with max average:, ${JSON.stringify(maxAverageStudent.name)}, with average:, ${JSON.stringify(maxAverageStudent.average)}\n
+        Student with min average:, ${JSON.stringify(minAverageStudent.name)}, with average:, ${JSON.stringify(minAverageStudent.average)}`);
+
 
     }
+
 
 }
