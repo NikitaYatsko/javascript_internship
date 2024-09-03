@@ -6,8 +6,8 @@ export function object11() {
         {name: "Andrew", marks: [8, 10, 7, 5, 4]},
         {name: "John", marks: [4, 9, 7, 5, 9]},
         {name: "Nick", marks: [2, 4, 2, 5, 4]},
-        {name: "Ivan", marks: [6, 10, 7, 5, 6]},
-        {name: "Saniok", marks: [8, 10, 9, 5, 8]}
+        {name: "Ivan", marks: [6, 10, 8, 5, 6]},
+        {name: "Saniok", marks: [10, 10, 9, 5, 8, 7, 10, 7, 10, 7]}
     ];
 
     /*switch (option) {
@@ -21,10 +21,11 @@ export function object11() {
             minMaxAverage(arrayOfStudents);
 
     }*/
-    averageGrade(arrayOfStudents);
+   /* averageGrade(arrayOfStudents);
     lessThanFiveAverage(arrayOfStudents);
     minMaxAverage(arrayOfStudents);
-
+    sortByAverage(arrayOfStudents);
+*/
     function averageGrade(array) {
         const arrayOfAverageGrade = array.map(obj => ({
             name: obj.name,
@@ -62,5 +63,30 @@ export function object11() {
 
     }
 
+    function sortByAverage(arrayToSort) {
+        const arrayForNextSort = arrayToSort.map(obj => ({
+            name: obj.name,
+            average: obj.marks.reduce((sum, mark) => sum + mark) / obj.marks.length
+        }))
+            .sort((a, b) => b.average - a.average);
+        alert(`Sorted data: \n${JSON.stringify(arrayForNextSort)}`);
+    }
+
+    function higherThanEntireClass(array) {
+
+        const totalAverage = array.map(obj => obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length)
+            .reduce((sum, avg) => sum + avg, 0) / array.length;
+
+
+        const higherThanClassAverage = array.map(obj => ({
+            name: obj.name,
+            average: obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length
+        }))
+            .filter(student => student.average > totalAverage);
+
+        alert(`Students with average grade higher than the class average: \n${JSON.stringify(higherThanClassAverage)}`);
+    }
+
+    higherThanEntireClass(arrayOfStudents)
 
 }
