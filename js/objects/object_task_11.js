@@ -1,7 +1,10 @@
 export function object11() {
     let option = parseInt(prompt("What option you choose?:\n" +
         "1.Show average grade for each student\n" +
-        "2.Show students with average note < 5\n"));
+        "2.Show students with average note < 5\n" +
+        "3.Show min and max average note\n" +
+        "4.Show sorted by average students\n" +
+        "5.Show average higher than entire class"));
     const arrayOfStudents = [
         {name: "Andrew", marks: [8, 10, 7, 5, 4]},
         {name: "John", marks: [4, 9, 7, 5, 9]},
@@ -10,7 +13,7 @@ export function object11() {
         {name: "Saniok", marks: [10, 10, 9, 5, 8, 7, 10, 7, 10, 7]}
     ];
 
-    /*switch (option) {
+    switch (option) {
         case 1:
             averageGrade(arrayOfStudents);
             break;
@@ -19,74 +22,74 @@ export function object11() {
             break;
         case 3:
             minMaxAverage(arrayOfStudents);
-
-    }*/
-   /* averageGrade(arrayOfStudents);
-    lessThanFiveAverage(arrayOfStudents);
-    minMaxAverage(arrayOfStudents);
-    sortByAverage(arrayOfStudents);
-*/
-    function averageGrade(array) {
-        const arrayOfAverageGrade = array.map(obj => ({
-            name: obj.name,
-            average: obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length
-        }))
-
-        alert(`Average grade for each student: \n${JSON.stringify(arrayOfAverageGrade)}`)
+            break;
+        case 4:
+            sortByAverage(arrayOfStudents);
+            break;
+        case 5:
+            higherThanEntireClass(arrayOfStudents);
+            break;
+        default:
+            alert("Invalid option");
     }
+}
 
-    function lessThanFiveAverage(array) {
-        const arrayLessThanFive = array.map(obj => ({
-            name: obj.name,
-            average: obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length
-        }))
-            .filter(student => student.average < 5)
 
-        alert(`Lowest average grade: \n${JSON.stringify(arrayLessThanFive)}`);
+function getAverage(array) {
+    if (array.length === 0) {
+        alert(`Error: Array is empty`)
+        return [];
     }
+    return array.map(obj => ({
+        name: obj.name,
+        average: obj.marks.reduce((sum, mark) => sum + mark) / obj.marks.length
+    }));
+}
 
-    function minMaxAverage(array) {
+function averageGrade(array) {
+    const arrayOfAverageGrade = getAverage(array);
 
-        const arrayOfAverages = array.map(obj => ({
-            name: obj.name,
-            average: obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length
-        }));
-        //
-        const maxAverageStudent = arrayOfAverages.reduce((max, student) => student.average > max.average ? student : max, arrayOfAverages[0]);
-        const minAverageStudent = arrayOfAverages.reduce((min, student) => student.average < min.average ? student : min, arrayOfAverages[0]);
-        //здесь решил воспользоваться ИИ тк застопорился и долго не понимал как сообразить решение(
+    alert(`Average grade for each student: \n${JSON.stringify(arrayOfAverageGrade)}`)
+}
 
-        alert(`Average grades for each student:, ${JSON.stringify(arrayOfAverages)}\n
-        Student with max average:, ${maxAverageStudent.name}, with average:, ${maxAverageStudent.average}\n
-        Student with min average:, ${minAverageStudent.name}, with average:, ${minAverageStudent.average}`);
+function lessThanFiveAverage(array) {
+    const arrayLessThanFive = getAverage(array)
+        .filter(student => student.average < 5)
 
+    alert(`Lowest average grade: \n${JSON.stringify(arrayLessThanFive)}`);
+}
 
-    }
+function minMaxAverage(array) {
 
-    function sortByAverage(arrayToSort) {
-        const arrayForNextSort = arrayToSort.map(obj => ({
-            name: obj.name,
-            average: obj.marks.reduce((sum, mark) => sum + mark) / obj.marks.length
-        }))
-            .sort((a, b) => b.average - a.average);
-        alert(`Sorted data: \n${JSON.stringify(arrayForNextSort)}`);
-    }
+    const arrayOfAverages = getAverage(array)
+    //
+    const maxAverageStudent = arrayOfAverages.reduce((max, student) => student.average > max.average ? student : max, arrayOfAverages[0]);
+    const minAverageStudent = arrayOfAverages.reduce((min, student) => student.average < min.average ? student : min, arrayOfAverages[0]);
+    //здесь решил воспользоваться ИИ тк застопорился и долго не понимал как сообразить решение(
 
-    function higherThanEntireClass(array) {
-
-        const totalAverage = array.map(obj => obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length)
-            .reduce((sum, avg) => sum + avg, 0) / array.length;
+    alert(`Average grades for each student:, ${JSON.stringify(arrayOfAverages)}\n
+    Student with max average:, ${maxAverageStudent.name}, with average:, ${maxAverageStudent.average}\n
+    Student with min average:, ${minAverageStudent.name}, with average:, ${minAverageStudent.average}`);
 
 
-        const higherThanClassAverage = array.map(obj => ({
-            name: obj.name,
-            average: obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length
-        }))
-            .filter(student => student.average > totalAverage);
+}
 
-        alert(`Students with average grade higher than the class average: \n${JSON.stringify(higherThanClassAverage)}`);
-    }
+function sortByAverage(arrayToSort) {
+    const arrayForNextSort = getAverage(arrayToSort)
+        .sort((a, b) => b.average - a.average);
+    alert(`Sorted data: \n${JSON.stringify(arrayForNextSort)}`);
+}
 
-    higherThanEntireClass(arrayOfStudents)
+function higherThanEntireClass(array) {
+
+    const totalAverage = array.map(obj => obj.marks.reduce((sum, mark) => sum + mark, 0) / obj.marks.length)
+        .reduce((sum, avg) => sum + avg, 0) / array.length;
+
+    const higherThanClassAverage = getAverage(array)
+        .filter(student => student.average > totalAverage);
+
+
+    alert(`Total average = ${totalAverage},\nstudents with average > total average are ${JSON.stringify(higherThanClassAverage)}`)
+
 
 }
