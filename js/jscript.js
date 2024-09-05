@@ -18,6 +18,7 @@ import {object8} from "./objects/object_task_8.js";
 import {object9} from "./objects/object_task_9.js";
 //object9();
 import {object10} from "./objects/object_task_10.js";
+
 object10();
 import {object11} from "./objects/object_task_11.js";
 //object11();
@@ -72,3 +73,4 @@ import {task10} from "./fundamentals/task_10.js";
 //task8();
 //task9();
 //task10();
+
