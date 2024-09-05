@@ -20,7 +20,10 @@ import {object9} from "./objects/object_task_9.js";
 //import {object10} from "./objects/object_task_10.js";
 //object10();
 import {object11} from "./objects/object_task_11.js";
-object11();
+//object11();
+import {object12} from "./objects/object_task_12.js";
+
+object12();
 
 //ARRAYS
 
