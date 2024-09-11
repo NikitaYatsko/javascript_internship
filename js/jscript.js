@@ -4,7 +4,11 @@ import {timeDate1} from "./time-date/time-date_1.js";
 import {timeDate2} from "./time-date/time-date_2.js";
 //timeDate2();
 import {timeDate3} from "./time-date/time-date_3.js";
-timeDate3();
+//timeDate3();
+
+import {timeDate4} from "./time-date/time-date_4.js";
+
+timeDate4();
 
 //OBJECTS
 import {object1} from "./objects/object_task_1.js";
