@@ -1,6 +1,10 @@
 //TIME AND DATE
 import {timeDate1} from "./time-date/time-date_1.js";
-timeDate1();
+//timeDate1();
+import {timeDate2} from "./time-date/time-date_2.js";
+//timeDate2();
+import {timeDate3} from "./time-date/time-date_3.js";
+timeDate3();
 
 //OBJECTS
 import {object1} from "./objects/object_task_1.js";
