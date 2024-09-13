@@ -1,7 +1,7 @@
 export function timeDate5() {
     function timeConvert(minutes) {
 
-        if (minutes < 0){
+        if (minutes < 0) {
             return "Invalid data, minutes cant be < 0"
         }
 

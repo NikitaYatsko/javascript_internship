@@ -9,7 +9,9 @@ import {timeDate4} from "./time-date/time-date_4.js";
 //timeDate4();
 
 import {timeDate5} from "./time-date/time-date_5.js";
-timeDate5();
+//timeDate5();
+import {timeDate6} from "./time-date/time-date_6.js";
+timeDate6();
 
 //OBJECTS
 import {object1} from "./objects/object_task_1.js";
