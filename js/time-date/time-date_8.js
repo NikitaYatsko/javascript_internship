@@ -2,6 +2,7 @@ export function timeDate8() {
 
     let interval;
 
+
     function updateTime() {
         const now = new Date();
         const hours = now.getHours().toString();
@@ -15,10 +16,13 @@ export function timeDate8() {
     }
 
     const buttonStart = document.querySelector(".start");
+
     buttonStart.addEventListener('click', () => {
-        interval = setInterval(updateTime, 1000);
+        interval = setInterval(updateTime,);
     });
-    const stopButton = document.querySelector(".stop")
+
+    const stopButton = document.querySelector(".stop");
+
     stopButton.addEventListener("click", () => {
         clearInterval(interval);
     });

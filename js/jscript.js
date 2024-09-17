@@ -17,7 +17,10 @@ import {timeDate7} from "./time-date/time-date_7.js";
 //timeDate7();
 import {timeDate8} from "./time-date/time-date_8.js";
 
-timeDate8();
+//timeDate8();
+import {timeDate9} from "./time-date/time-date_9.js";
+
+timeDate9();
 
 //OBJECTS
 import {object1} from "./objects/object_task_1.js";
