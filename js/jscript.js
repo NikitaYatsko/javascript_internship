@@ -1,3 +1,27 @@
+//TIME AND DATE
+import {timeDate1} from "./time-date/time-date_1.js";
+//timeDate1();
+import {timeDate2} from "./time-date/time-date_2.js";
+//timeDate2();
+import {timeDate3} from "./time-date/time-date_3.js";
+//timeDate3();
+import {timeDate4} from "./time-date/time-date_4.js";
+//timeDate4();
+
+import {timeDate5} from "./time-date/time-date_5.js";
+//timeDate5();
+import {timeDate6} from "./time-date/time-date_6.js";
+//timeDate6();
+import {timeDate7} from "./time-date/time-date_7.js";
+
+//timeDate7();
+import {timeDate8} from "./time-date/time-date_8.js";
+
+//timeDate8();
+import {timeDate9} from "./time-date/time-date_9.js";
+
+timeDate9();
+
 //OBJECTS
 import {object1} from "./objects/object_task_1.js";
 //object1();
@@ -17,9 +41,8 @@ import {object8} from "./objects/object_task_8.js";
 //object8();
 import {object9} from "./objects/object_task_9.js";
 //object9();
-import {object10} from "./objects/object_task_10.js";
-
-object10();
+/*import {object10} from "./objects/object_task_10.js";
+object10();*/
 import {object11} from "./objects/object_task_11.js";
 //object11();
 import {object12} from "./objects/object_task_12.js";
