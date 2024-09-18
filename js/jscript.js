@@ -1,7 +1,9 @@
 //JSON
 import {json1} from "./JSON/json1.js";
 
-json1();
+//json1();
+import {json2} from "./JSON/json2.js"
+json2();
 
 
 
