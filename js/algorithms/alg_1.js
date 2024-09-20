@@ -14,5 +14,22 @@ while (i < 50) {
 
 console.log(result);
 
+//task2
 
+function fibonachi(n) {
+    let array = []
+    let a = 0;
+    let b = 1;
+    array.splice(0, 0, a, b);
+    for (let i = 3; i <= n; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+        array.push(b);
+    }
+    return array;
+
+}
+
+console.log(fibonachi(10));
 
