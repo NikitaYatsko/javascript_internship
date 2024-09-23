@@ -52,10 +52,34 @@ function chotoTam(n) {
     let array = [];
 
     for (let i = 0; i <= n; i++) {
-        array.push(i*i);
+        array.push(i * i);
     }
     return array;
 
 }
+
 console.log(chotoTam(100));
+
+//task 5
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+function printPrimes(limit) {
+    let primes = [];
+    for (let i = 2; i <= limit; i++) {
+        if (isPrime(i)) {
+            primes.push(i);
+        }
+    }
+    return primes;
+}
+
+
+console.log(printPrimes(100)); // Выводим простые числа до 100
+
 
