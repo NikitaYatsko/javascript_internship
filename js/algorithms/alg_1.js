@@ -45,4 +45,17 @@ function factorial(n) {
 
 }
 
-console.log(factorial(1));
+console.log(factorial(5));
+
+//task 4
+function chotoTam(n) {
+    let array = [];
+
+    for (let i = 0; i <= n; i++) {
+        array.push(i*i);
+    }
+    return array;
+
+}
+console.log(chotoTam(100));
+
