@@ -33,3 +33,16 @@ function fibonachi(n) {
 
 console.log(fibonachi(10));
 
+//task 3
+
+function factorial(n) {
+
+
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+
+}
+
+console.log(factorial(1));
