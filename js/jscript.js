@@ -1,3 +1,5 @@
+import {alg2} from "./algorithms/alg_2.js";
+alg2();
 //JSON
 import {json1} from "./JSON/json1.js";
 
