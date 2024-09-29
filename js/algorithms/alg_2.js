@@ -1,4 +1,4 @@
-export function alg2(){
+export function alg2() {
     let data = {
 
         "Рыбы": {
@@ -40,28 +40,28 @@ export function alg2(){
 
 
 //
-    function createMatrix(row, cols) {
+    function createMatrix(rows, cols) {
         let matrix = [];
         let value = 0;
-        for (let i = 0; i < row; i++) {
+
+        for (let i = 0; i < rows; i++) {
             let row = [];
             for (let j = 0; j < cols; j++) {
-                row.push(value++);
+                if (i === j) {
+                    row.push(value);
+                    value++;
+                } else {
+                    row.push(Math.floor(Math.random() * 10));
+                }
             }
-
             matrix.push(row);
-
         }
+
         return matrix;
-
-
     }
 
-    console.log(createMatrix(3, 3));
-//понятия не имею как это решить.
 
-
-
-
-
+    const result = createMatrix(4, 4);
+    console.log(result);
+//вообще не понимаю закономерность кроме того,что по диагонали 0 1 2 3 и тд, поэтому заполнил рандомными числами
 }
