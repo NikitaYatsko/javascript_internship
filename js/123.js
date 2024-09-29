@@ -59,9 +59,29 @@ result = find(arrayOfNumbers, 1);
 console.log(result);
 
 let stringg = "lorem ipsum dolor sit amet consectetur adipisicing elit Accusamus nostrum!";
+
 function reverseWord(stringToReverse) {
-    return  stringToReverse.split(' ').reverse().join(' ');
+    return stringToReverse.split(' ').reverse().join(' ');
 
 }
+
 console.log(reverseWord(stringg));
 
+function boolToWord(bool) {
+    return bool ? 'Yes' : "No";
+}
+
+let name = "John Smith"
+
+function abbrevName(name) {
+    const array = name.split(' ')
+    console.log(array);
+    let abbrev = [];
+    for (let i = 0; i < array.length; i++) {
+        abbrev.push(array[i].charAt(0).toUpperCase());
+    }
+    return abbrev.join(".")
+
+}
+
+console.log(abbrevName(name));
