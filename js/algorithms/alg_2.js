@@ -50,7 +50,7 @@ export function alg2() {
                 if (i === j) {
                     row.push(value);
                     value++;
-                } else {
+                } else if (i+1) {
                     row.push(Math.floor(Math.random() * 10));
                 }
             }
@@ -63,5 +63,5 @@ export function alg2() {
 
     const result = createMatrix(4, 4);
     console.log(result);
-//вообще не понимаю закономерность кроме того,что по диагонали 0 1 2 3 и тд, поэтому заполнил рандомными числами
+//вообще не понимаю закономерность кроме того,что по диагонали 0 1 2 3 и тд, поэтому заполнил рандомными чисел
 }

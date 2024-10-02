@@ -86,4 +86,32 @@ function abbrevName(name) {
 
 console.log(abbrevName(name));
 
+const arrayOfStrings = ["Keep", "Remove", "Keep", "Remove", "Keep"];
+
+function removeEveryOther(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr.splice(i + 1, 1)
+    }
+    return arr;
+}
+
+console.log(removeEveryOther(arrayOfStrings));
+
+n = 10;
+
+function testEven(n) {
+    return n % 2 === 0;
+}
+
+console.log(testEven(n));
+
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    if(mpg * fuelLeft === distanceToPump){
+        return true;
+    } else {
+        return false;
+    }
+};
+console.log(zeroFuel(50,25,3));
 
